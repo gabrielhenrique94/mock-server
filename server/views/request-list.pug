@@ -1,0 +1,26 @@
+extends ../../node_modules/jade-bootstrap/_bootstrap
+block body 
+    .container-fluid
+        h2.sub-header Mocked Routes
+            div.btn-group.float-sm-right
+                button.btn.btn-success New Request
+        .table-responsive
+            table.table.table-striped.table-bordered
+                thead
+                    tr
+                        th #
+                        th Method
+                        th Path
+                        th Action
+                tbody
+                    each request in request_list
+                        tr
+                            td #{request.id}
+                            td #{request.method}
+                            td #{request.path}
+                            td 
+                                div.btn-group
+                                    button.btn.btn-primary Edit
+                                    button.btn.btn-danger Delete
+                                    button.btn.btn-success(path=request.path onclick='try_request(this)') Try
+    script(src="/scripts/request-list.js")

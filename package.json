@@ -1,0 +1,25 @@
+{
+  "name": "mock-server",
+  "version": "1.0.0",
+  "description": "\"Mock your routes\"",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jade-bootstrap": "^1.0.14",
+    "morgan": "^1.9.0",
+    "mysql2": "^1.5.1",
+    "pug": "^2.0.0-rc.4",
+    "sequelize": "^4.29.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.8"
+  },
+  "scripts": {
+    "start:dev": "./node_modules/.bin/nodemon ./bin/www -w app.js -w server",
+    "start": "node .bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabriel Henrique",
+  "license": "ISC"
+}

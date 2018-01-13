@@ -1,0 +1,13 @@
+{
+  "production": {
+    "use_env_variable": "CLEARDB_DATABASE_URL"
+  },
+  "development": {
+    "host": "127.0.0.1",
+    "username": "root",
+    "password": "12345678",
+    "name": "mock-server",
+    "database": "mock-server",
+    "dialect": "mysql"
+  }
+}
